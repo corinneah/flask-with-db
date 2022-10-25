@@ -9,17 +9,17 @@ db.execute("DROP TABLE IF EXISTS patient_table")
 connect.commit()
 
 # Creating table, 
-table = """ CREATE TABLE patient_table (
-            mrn VARCHAR(255) NOT NULL,
-            firstname CHAR(25) NOT NULL,
-            lastname CHAR(25) NOT NULL,
-            gender CHAR(25) NOT NULL,
-            dob CHAR(25) NOT NULL,
-            city CHAR(25) NOT NULL,
-            insurance CHAR(25) NOT NULL,
-        ); """
+table = """ CREATE TABLE patient_table (mrn VARCHAR(255) NOT NULL,
+firstname CHAR(25) NOT NULL,
+lastname CHAR(25) NOT NULL,
+gender CHAR(25) NOT NULL,
+dob CHAR(25) NOT NULL,
+city CHAR(25) NOT NULL,
+insurance CHAR(25) NOT NULL, 
+); 
+"""
 
-db.execute(table) 
+db.execute(table)
 connect.commit() 
 
 #insert data into table 
